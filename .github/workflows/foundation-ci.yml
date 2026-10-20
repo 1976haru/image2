@@ -1,0 +1,19 @@
+name: image2 foundation checks
+
+on:
+  push:
+    branches: ['feature/**', 'main']
+  pull_request:
+
+jobs:
+  foundation:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Foundation syntax check
+        run: python -m compileall -q tools test_foundation
+      - name: Read-only diagnostic unit tests
+        run: python -m unittest discover -s test_foundation -p "test_*.py" -v
