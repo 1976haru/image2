@@ -1,0 +1,174 @@
+{
+ "meta": {
+  "episodeNo": "901",
+  "episodeTitle": "Synthetic Harbor Evening",
+  "episodeStory": "Two fictional strangers meet at a harbor festival.",
+  "seasonArc": [
+   "first glance",
+   "walking together",
+   "quiet pier talk",
+   "soft goodbye"
+  ],
+  "continuityBoundary": {
+   "mustNotHappen": "confession, kiss, holding hands, relationship label"
+  },
+  "sceneAnchors": [
+   "Dusk: at a crowded harbor festival they recognize each other between two lantern stalls. Film direction: wide establishing shot, full upper bodies visible.",
+   "Evening: they walk side by side past food stalls as a ferry leaves the gate. Film direction: medium full shot from a slight side angle.",
+   "Blue hour: they sit at the end of a wooden pier talking quietly. Film direction: low-angle pier shot from behind, side profiles, sea horizon.",
+   "Night: on the same lantern street they part with a small wave. Film direction: street-level two-shot, visible distance, no physical contact."
+  ]
+ },
+ "songs": [
+  {
+   "trackNo": 1,
+   "title": "Synthetic Song 01",
+   "vocalType": "Female Solo",
+   "storyPOV": "female",
+   "centralImage": "harbor festival stalls at dusk",
+   "listenerSituation": "a fictional summer evening by the sea",
+   "emotionArc": "curious",
+   "lyrics": "[Verse 1]\nyellow paper lanterns sway above the harbor stalls\nwe trade a quiet look across the crowd"
+  },
+  {
+   "trackNo": 2,
+   "title": "Synthetic Song 02",
+   "vocalType": "Male Solo",
+   "storyPOV": "male",
+   "centralImage": "paper lanterns over a seaside street",
+   "listenerSituation": "a fictional summer evening by the sea",
+   "emotionArc": "warm",
+   "lyrics": "[RAP POCKET - laid back]\nI walk the pier with salt still in the air\nyour laugh is the first light I notice"
+  },
+  {
+   "trackNo": 3,
+   "title": "Synthetic Song 03",
+   "vocalType": "Female Solo",
+   "storyPOV": "female",
+   "centralImage": "ferry gate under evening sky",
+   "listenerSituation": "a fictional summer evening by the sea",
+   "emotionArc": "hesitant",
+   "lyrics": "[Chorus]\nthe ferry horn sounds while we wait at the gate\nI say your name like an old map"
+  },
+  {
+   "trackNo": 4,
+   "title": "Synthetic Song 04",
+   "vocalType": "Female Solo",
+   "storyPOV": "female",
+   "centralImage": "harbor festival stalls at dusk",
+   "listenerSituation": "a fictional summer evening by the sea",
+   "emotionArc": "curious",
+   "lyrics": "[Verse 1]\nyellow paper lanterns sway above the harbor stalls\nwe trade a quiet look across the crowd"
+  },
+  {
+   "trackNo": 5,
+   "title": "Synthetic Song 05",
+   "vocalType": "Male Solo",
+   "storyPOV": "male",
+   "centralImage": "paper lanterns over a seaside street",
+   "listenerSituation": "a fictional summer evening by the sea",
+   "emotionArc": "warm",
+   "lyrics": "[RAP POCKET - laid back]\nI walk the pier with salt still in the air\nyour laugh is the first light I notice"
+  },
+  {
+   "trackNo": 6,
+   "title": "Synthetic Song 06",
+   "vocalType": "Male Solo",
+   "storyPOV": "male",
+   "centralImage": "ferry gate under evening sky",
+   "listenerSituation": "a fictional summer evening by the sea",
+   "emotionArc": "hesitant",
+   "lyrics": "[Chorus]\nthe ferry horn sounds while we wait at the gate\nI say your name like an old map"
+  },
+  {
+   "trackNo": 7,
+   "title": "Synthetic Song 07",
+   "vocalType": "Duet",
+   "storyPOV": "duet",
+   "centralImage": "harbor festival stalls at dusk",
+   "listenerSituation": "a fictional summer evening by the sea",
+   "emotionArc": "curious",
+   "lyrics": "[Verse 1]\nyellow paper lanterns sway above the harbor stalls\nwe trade a quiet look across the crowd"
+  },
+  {
+   "trackNo": 8,
+   "title": "Synthetic Song 08",
+   "vocalType": "Male Solo",
+   "storyPOV": "male",
+   "centralImage": "paper lanterns over a seaside street",
+   "listenerSituation": "a fictional summer evening by the sea",
+   "emotionArc": "warm",
+   "lyrics": "[RAP POCKET - laid back]\nI walk the pier with salt still in the air\nyour laugh is the first light I notice"
+  },
+  {
+   "trackNo": 9,
+   "title": "Synthetic Song 09",
+   "vocalType": "Female Solo",
+   "storyPOV": "female",
+   "centralImage": "ferry gate under evening sky",
+   "listenerSituation": "a fictional summer evening by the sea",
+   "emotionArc": "hesitant",
+   "lyrics": "[Chorus]\nthe ferry horn sounds while we wait at the gate\nI say your name like an old map"
+  },
+  {
+   "trackNo": 10,
+   "title": "Synthetic Song 10",
+   "vocalType": "Female Solo",
+   "storyPOV": "female",
+   "centralImage": "harbor festival stalls at dusk",
+   "listenerSituation": "a fictional summer evening by the sea",
+   "emotionArc": "curious",
+   "lyrics": "[Verse 1]\nyellow paper lanterns sway above the harbor stalls\nwe trade a quiet look across the crowd"
+  },
+  {
+   "trackNo": 11,
+   "title": "Synthetic Song 11",
+   "vocalType": "Male Solo",
+   "storyPOV": "male",
+   "centralImage": "paper lanterns over a seaside street",
+   "listenerSituation": "a fictional summer evening by the sea",
+   "emotionArc": "warm",
+   "lyrics": "[RAP POCKET - laid back]\nI walk the pier with salt still in the air\nyour laugh is the first light I notice"
+  },
+  {
+   "trackNo": 12,
+   "title": "Synthetic Song 12",
+   "vocalType": "Duet",
+   "storyPOV": "duet",
+   "centralImage": "ferry gate under evening sky",
+   "listenerSituation": "a fictional summer evening by the sea",
+   "emotionArc": "hesitant",
+   "lyrics": "[Chorus]\nthe ferry horn sounds while we wait at the gate\nI say your name like an old map"
+  },
+  {
+   "trackNo": 13,
+   "title": "Synthetic Song 13",
+   "vocalType": "Male Solo",
+   "storyPOV": "male",
+   "centralImage": "harbor festival stalls at dusk",
+   "listenerSituation": "a fictional summer evening by the sea",
+   "emotionArc": "curious",
+   "lyrics": "[Verse 1]\nyellow paper lanterns sway above the harbor stalls\nwe trade a quiet look across the crowd"
+  },
+  {
+   "trackNo": 14,
+   "title": "Synthetic Song 14",
+   "vocalType": "Female Solo",
+   "storyPOV": "female",
+   "centralImage": "paper lanterns over a seaside street",
+   "listenerSituation": "a fictional summer evening by the sea",
+   "emotionArc": "warm",
+   "lyrics": "[RAP POCKET - laid back]\nI walk the pier with salt still in the air\nyour laugh is the first light I notice"
+  },
+  {
+   "trackNo": 15,
+   "title": "Synthetic Song 15",
+   "vocalType": "Duet",
+   "storyPOV": "duet",
+   "centralImage": "ferry gate under evening sky",
+   "listenerSituation": "a fictional summer evening by the sea",
+   "emotionArc": "hesitant",
+   "lyrics": "[Chorus]\nthe ferry horn sounds while we wait at the gate\nI say your name like an old map"
+  }
+ ]
+}

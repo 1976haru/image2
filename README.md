@@ -3,7 +3,13 @@
 **목표:** Windows RTX 3060 12GB / RAM 32GB에서 ComfyUI를 로컬 엔진으로 사용하여, 반복 가능한 고품질 YouTube 이미지 4장을 만드는 프로그램. 개발은 Claude Code 중심, Codex 리뷰, GitHub PR 중심.
 
 ## 중요: 현재 단계
-이 저장소의 feature 브랜치는 **품질 우선 개발 기반·설계 문서** 단계입니다. 과거 V1.3.1의 4장 생성 코드가 아직 이 저장소에 이관되지 않았습니다. V1.3.1을 그대로 정상 작동한다고 주장하지 마세요. 아래 마이그레이션 작업이 선행되어야 합니다.
+V1.3.1 Python 코드와 테스트는 `story_image_studio/`, `tests/`로 이관되었습니다(2026-10-21). 테스트는 공개 가능한 합성 데이터(`tests/fixtures/`)만 사용합니다.
+에피소드별 장면 지시문과 Mio/Haru 마스터 TXT는 저장소 밖 `%LOCALAPPDATA%\CHILI_LAB\StoryImageStudio\`(`scene_anchors\EP###.json`, `masters\MIO_MASTER.txt`, `masters\HARU_MASTER.txt`)에서 읽습니다.
+
+- STORY 엔진: Animagine XL 3.1(텍스트 전용) / **FLUX.2 Klein 4B FP8 남녀 다중 레퍼런스**(커스텀 노드 불필요, ComfyUI 0.42.1 core 노드).
+- 1장 실생성 비교 기록: [docs/BENCHMARK_2026-10-21.md](docs/BENCHMARK_2026-10-21.md). 사용자 육안 승인(VISUAL_APPROVED) 전입니다.
+- 모델 고정 목록: [config/model_manifest.json](config/model_manifest.json).
+- 실기 1장 비교: `python tools/gpu_compare.py --story-json <개인 JSON> --scene 1 --engine flux2 --male <남> --female <여>` (결과는 gitignore된 `local_runs/`에만 저장).
 
 ## 3개의 분리된 제품 모드
 1. **STORY_ANIME**: 10~20곡을 담은 이야기 JSON → 기승전결 독립 이미지 4장, 남자/여자/남녀 시점, 남녀 별도 레퍼런스. 누락된 얼굴 참조를 텍스트 프롬프트만으로 '유지 성공'이라고 보고하지 말 것.

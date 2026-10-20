@@ -1,0 +1,17 @@
+SYNTHETIC TEST MASTER — mio's morning (fictional fixture, not the real master)
+Rules summary for tests only.
+
+NO: 001
+PLAYLIST_CODE: P01
+状況: [状況]
+MAIN_TEXT: [MAIN_TEXT]
+DISPLAY_TEXT: [DISPLAY_TEXT]
+EMOTIONAL_LINE: [EMOTIONAL_LINE]
+
+--- current episode ---
+NO: 905
+PLAYLIST_CODE: P03
+状況: 春の朝、窓辺に藤の花が揺れている
+MAIN_TEXT: A Quiet Spring Window
+DISPLAY_TEXT: Lilac Window
+EMOTIONAL_LINE: 静かな朝の光

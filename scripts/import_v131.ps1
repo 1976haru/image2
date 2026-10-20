@@ -1,4 +1,4 @@
-# Import existing LOCAL V1.3.1 Python files into local image2 checkout.
+﻿# Import existing LOCAL V1.3.1 Python files into local image2 checkout.
 # Explicit opt-in: copies source+tests only. No model weights or user creative material.
 # Examples may be copied for LOCAL tests only, but are gitignored and NEVER pushed.
 [CmdletBinding(SupportsShouldProcess=$true)]
