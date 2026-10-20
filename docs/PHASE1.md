@@ -12,6 +12,9 @@ Machine: Windows, RTX 3060 12GB, RAM 32GB, Comfy Desktop instances may live on d
 5. Replace any real episode lyrics, reference photos, master prompt TXT and images before committing. Keep them only in local ignored workspace.
 6. Commit on feature branch; open draft PR; no main merge.
 
+## Model strategy update (researched 2026-10-20)
+The user priority is reference fidelity + sharp finished art, not maximum number of features. **First evaluate FLUX.2 Klein 4B FP8 multi-reference** instead of continuing an endless IPAdapter repair loop. This newer Apache-2.0 commercial model accepts male and female image references directly in one edit workflow. Official repo: https://github.com/black-forest-labs/flux2 and official ComfyUI edit workflow: https://blog.comfy.org/p/flux2-klein-4b-fast-local-image-editing. Before any new download/install, check compatibility with user's Comfy Desktop and RTX 3060 12GB, install only after approval, isolated from working instance, then compare ONE frame with Animagine baseline. BF16 approximately 13GB VRAM can exceed RTX 3060 12GB; FP8 and CPU encoder offload are candidate options, real performance unverified. If FLUX gives poor anime identity, retain Animagine/IPAdapter as candidate A.
+
 ## Stage 1 — eliminate root causes rather than patching screenshots
 P0-1. Central engine registry with three workflows:
   - ZIMAGE_PHOTO_TEXT2IMG native/core nodes (MIO/HARU).
