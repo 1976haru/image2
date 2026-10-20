@@ -16,7 +16,7 @@ Ship **four genuinely different, approved images** for either a 15-song Korean/J
 
 ## Mandatory design
 - Modes separate: STORY_ANIME with people, MIO_MORNING no people, HARU_LITTLE_CAFE no people.
-- Engine separation: SDXL anime for STORY; Z-Image Turbo photoreal or measured photoreal checkpoint for Morning. Do not apply SDXL anime checkpoint to morning photos.
+- Engine separation: STORY first A/B-benchmark (A) Animagine XL SDXL+verified IPAdapter against (B) **FLUX.2 Klein 4B FP8 multi-reference edit**, Apache-2.0. Existing IPAdapter plugin is NOT loaded in observed servers. Verify RTX 3060 12GB viability, compatible ComfyUI version, memory/offload and anime similarity before installs/claims. Morning remains Z-Image Turbo photoreal; never apply SDXL anime to morning photos.
 - Reference modes: STORY_TEXT (no image-conditioned identity, explicit acknowledgment), SDXL_IPADAPTER (requires nodes/assets), IMG2IMG (keeps composition; NOT identity guarantee).
 - Never silently revert to unconditioned image generation if references requested; fail closed with actionable prerequisite report.
 - Male and female must have separate images; optionally use face crops + regional masks. Identity reference ≠ scene/mood reference.
@@ -42,6 +42,10 @@ Keep existing Python architecture during initial import. Refactor large GUI modu
 - No success claims based on mocked GPUs. Mark as UNVERIFIED until on-device comparison accepted.
 - Every user report includes: verified work, estimated whole-project completion, what remains in priority order, ONE immediate next action.
 - Codex reviews the PR after Claude Code commits, particularly GPU assumptions, privacy, workflow schemas, test gaps.
+
+## Latest evidence-based model decision
+FLUX.2 [klein] 4B (https://github.com/black-forest-labs/flux2) combines commercial Apache-2.0 licensing and multiple reference images in one editing workflow, so evaluate on the user's dual anime references before further IPAdapter repairs. The official full-BF16 card quotes ~13GB VRAM; use model-specific FP8/offload if supported, with user's approval and in a NEW/isolated ComfyUI instance. Do not call it proven until real 3060 success.
+Qwen-Image-Edit-2511 may achieve stronger edit consistency, but memory footprint and quantization requirements make it a secondary research option. Never claim it is free of local GPU limits.
 
 ## Phase 1 priorities
 P0 restore code to image2 privately sanitized; P0 real preflight; P0 reference input effectiveness; P0 four-final-file export; P1 compare independent story frame images; P1 morning accurate 2-string photo previews; P2 performance and UX.
