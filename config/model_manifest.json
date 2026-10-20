@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "verified_on": {
+    "date": "2026-10-21",
+    "comfyui_version": "0.42.1",
+    "pytorch": "2.12.1+cu130",
+    "gpu": "RTX 3060 12GB",
+    "system_ram_gb": 32,
+    "custom_nodes_required": []
+  },
+  "model_root_note": "Shared model folder on the user's PC; files are never moved, renamed or re-downloaded by this app.",
+  "engines": {
+    "zimage": {
+      "use": "MIO_MORNING / HARU_LITTLE_CAFE photoreal backgrounds only",
+      "files": [
+        {"folder": "diffusion_models", "name": "z_image_turbo_int8_convrot.safetensors", "sha256": null},
+        {"folder": "text_encoders", "name": "qwen_3_4b_fp8_mixed.safetensors", "sha256": null},
+        {"folder": "vae", "name": "ae.safetensors", "sha256": null}
+      ],
+      "core_nodes": ["UNETLoader", "CLIPLoader(type=lumina2)", "VAELoader", "ModelSamplingAuraFlow", "KSampler", "EmptySD3LatentImage"]
+    },
+    "sdxl": {
+      "use": "STORY_ANIME candidate A (text-only until IPAdapter nodes are registered)",
+      "license": "CreativeML Open RAIL++-M (verify intended commercial use)",
+      "files": [
+        {"folder": "checkpoints", "name": "animagine-xl-3.1.safetensors", "sha256": null,
+         "source": "https://huggingface.co/cagliostrolab/animagine-xl-3.1"}
+      ],
+      "optional_custom_nodes": [
+        {"repo": "https://github.com/cubiq/ComfyUI_IPAdapter_plus", "status": "NOT REGISTERED on 127.0.0.1:8188 (2026-10-21)"}
+      ]
+    },
+    "flux2": {
+      "use": "STORY_ANIME candidate B: male/female multi-reference edit",
+      "license": "Apache-2.0 (FLUX.2 [klein] 4B)",
+      "workflow_source": "ComfyUI template image_flux2_klein_image_edit_4b_distilled.json (comfyui-workflow-templates 0.11.89)",
+      "files": [
+        {"folder": "diffusion_models", "name": "flux-2-klein-4b-fp8.safetensors", "bytes": 4070624520,
+         "sha256": "97ed34fe0567e436200f2faee3939b88f2b5d99f8af2a4dc16532c4245c0ccb6",
+         "source": "https://huggingface.co/black-forest-labs/FLUX.2-klein-4b-fp8"},
+        {"folder": "vae", "name": "flux2-vae.safetensors", "bytes": 336213556,
+         "sha256": "d64f3a68e1cc4f9f4e29b6e0da38a0204fe9a49f2d4053f0ec1fa1ca02f9c4b5",
+         "source": "https://huggingface.co/Comfy-Org/flux2-dev"},
+        {"folder": "text_encoders", "name": "qwen_3_4b_fp8_mixed.safetensors", "sha256": null,
+         "note": "Template names qwen_3_4b.safetensors (BF16); the existing FP8-mixed Qwen3-4B loaded and rendered on 2026-10-21."}
+      ],
+      "core_nodes": ["UNETLoader", "CLIPLoader(type=flux2)", "VAELoader", "EmptyFlux2LatentImage", "Flux2Scheduler",
+                     "KSamplerSelect", "RandomNoise", "CFGGuider", "SamplerCustomAdvanced", "ReferenceLatent",
+                     "ImageScaleToTotalPixels", "VAEEncode", "ConditioningZeroOut"],
+      "defaults": {"steps": 4, "cfg": 1.0, "sampler": "euler", "reference_megapixels": 1.0}
+    }
+  }
+}

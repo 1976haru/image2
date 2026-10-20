@@ -1,0 +1,8 @@
+SYNTHETIC TEST MASTER — haru little cafe (fictional fixture, not the real master)
+
+NO: 904
+PLAYLIST_CODE: P02
+状況: 雨の朝、小さなカフェの窓に雨粒
+MAIN_TEXT: Rainy Little Table
+DISPLAY_TEXT: Rain on Glass
+EMOTIONAL_LINE: やさしい雨音
