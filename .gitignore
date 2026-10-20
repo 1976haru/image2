@@ -1,0 +1,45 @@
+# Python / test / build
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+*.pyo
+build/
+dist/
+*.spec
+*.exe
+*.log
+coverage.xml
+htmlcov/
+# Private creative material and generated outputs (PUBLIC GitHub)
+examples/
+user_data/
+private/
+.local_inputs/
+local_runs/
+outputs/
+drafts/
+reference_images/
+generated/
+*.safetensors
+*.ckpt
+*.pth
+*.pt
+*.onnx
+*.gguf
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.wav
+*.mp3
+*.zip
+# Local settings and secrets
+.env
+.env.*
+settings.local.json
+catalog.local.json
+model_paths.local.yaml
+.DS_Store
+Thumbs.db
